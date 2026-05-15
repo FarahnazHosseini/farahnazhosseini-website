@@ -1,4 +1,35 @@
 :root {
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, .brand {
+  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: clamp(3.2rem, 7vw, 6.8rem);
+  line-height: 0.92;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+:root {
   --bg: #090909;
   --bg-soft: #111111;
   --panel: #151515;
