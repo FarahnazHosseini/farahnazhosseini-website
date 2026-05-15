@@ -312,3 +312,197 @@ a {
     font-size: 2.8rem;
   }
 }
+/* Make Publications and Projects match the clean About section */
+
+.light-section,
+.projects-section {
+  background: #ffffff;
+  color: #07101f;
+  padding: 80px 6vw;
+}
+
+.projects-section {
+  background: #f8f8f8;
+}
+
+.section-heading {
+  max-width: 920px;
+  margin-bottom: 42px;
+}
+
+.section-heading .section-kicker {
+  color: #b9913e;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+  font-size: 0.78rem;
+  margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  font-family: 'Playfair Display', serif;
+  color: #07101f;
+  font-size: clamp(2rem, 3.4vw, 3.4rem);
+  line-height: 1.15;
+  max-width: 900px;
+}
+
+/* Publications */
+
+.publication-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  max-width: 1050px;
+}
+
+.publication-list article {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-left: 4px solid #d4b15a;
+  padding: 24px 28px;
+  border-radius: 4px;
+}
+
+.publication-list article h3 {
+  color: #07101f;
+  font-size: 1.08rem;
+  line-height: 1.45;
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.publication-list article p {
+  color: #5f6777;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 26px;
+  color: #9b7627;
+  font-weight: 800;
+}
+
+.text-link:hover {
+  color: #d4b15a;
+}
+
+/* Projects */
+
+.cards {
+  display: grid;
+  gap: 22px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  padding: 28px 26px;
+  border-radius: 4px;
+  min-height: 190px;
+}
+
+.card h3 {
+  color: #07101f;
+  font-size: 1.18rem;
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.card p {
+  color: #5f6777;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Contact section clean style */
+
+.contact-section {
+  background: #07101f;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+  padding: 80px 6vw;
+}
+
+.contact-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.3rem, 4vw, 3.6rem);
+  color: white;
+}
+
+.contact-section .section-kicker {
+  color: #d4b15a;
+}
+
+.muted {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 177, 90, 0.28);
+  border-radius: 6px;
+  padding: 30px;
+  display: grid;
+  gap: 16px;
+}
+
+.contact-card a {
+  color: #e6c878;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+.contact-card a:hover {
+  color: #ffffff;
+}
+
+/* Footer */
+
+.footer {
+  background: #07101f;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 28px 6vw;
+  border-top: 1px solid rgba(212, 177, 90, 0.18);
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-list article,
+  .card,
+  .contact-card {
+    padding: 22px;
+  }
+}
