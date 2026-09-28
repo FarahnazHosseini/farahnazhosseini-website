@@ -1283,3 +1283,144 @@ p {
   }
 
 }
+/* =========================================================
+   DARK HERO / HOMEPAGE TOP SECTION
+========================================================= */
+
+.hero {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+
+  min-height: calc(100vh - 78px);
+
+  padding: 80px 5vw 90px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(320px, 0.85fr);
+
+  gap: 70px;
+
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(122, 38, 52, 0.38),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(183, 141, 52, 0.20),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #07090d 0%,
+      #10151c 55%,
+      #0a0d12 100%
+    );
+}
+
+
+/* HERO TEXT COLORS */
+
+.hero h1 {
+  color: #ffffff;
+}
+
+.hero .eyebrow {
+  color: #e7c76e;
+}
+
+.hero-role {
+  color: #f1cf78;
+}
+
+.hero-text {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+
+/* HERO BUTTONS */
+
+.hero .primary {
+  background: #d2ad55;
+  color: #101010;
+}
+
+.hero .primary:hover {
+  background: #edcc7a;
+}
+
+.hero .ghost {
+  background: transparent;
+
+  color: #f4d98a;
+
+  border: 1px solid rgba(244, 217, 138, 0.5);
+}
+
+.hero .ghost:hover {
+  background: rgba(255, 255, 255, 0.07);
+
+  border-color: #f4d98a;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image-wrap {
+  position: relative;
+
+  width: min(410px, 100%);
+
+  margin-left: auto;
+
+  padding: 10px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(216, 180, 90, 0.30),
+      rgba(255, 255, 255, 0.04)
+    );
+
+  border: 1px solid rgba(216, 180, 90, 0.20);
+
+  box-shadow:
+    0 28px 80px rgba(0, 0, 0, 0.48);
+}
+
+.hero-image-wrap img {
+  width: 100%;
+
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+
+  border-radius: 23px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 960px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+  }
+
+  .hero-image-wrap {
+    margin: 10px auto 0;
+  }
+
+}
